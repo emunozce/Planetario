@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Proyecto_final</string>
-    <string name="sun_info"></string>
+    <string name="sun_info">\u2022 El sol es la estrella central de nuestro Sistema Solar.\n\n
+    \u2022 Características destacadas: Su temperatura llega a 16 millones de ºC.
+    </string>
     <string name="mercurio_info">\u2022 Distancia al Sol: Aproximadamente 57.9 millones de kilómetros.\n\n
 \u2022 Características destacadas: Es el planeta más cercano al Sol y tiene
 temperaturas extremadamente altas en su superficie durante el día y muy
