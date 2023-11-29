@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Proyecto_final</string>
+    <string name="sun_info"></string>
+    <string name="mercurio_info"></string>
+    <string name="venus_info"></string>
+    <string name="tierra_info"></string>
+    <string name="marte_info"></string>
+    <string name="jupiter_info"></string>
+    <string name="saturno_info"></string>
+    <string name="urano_info"></string>
+    <string name="neptuno_info"></string>
+    <string name="enana_info"></string>
+    <string name="eliptica_info"></string>
+    <string name="irregular_info"></string>
+    <string name="agujero_info"></string>
+</resources>

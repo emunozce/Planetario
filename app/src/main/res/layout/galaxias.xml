@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/estrellas"
+    tools:context=".GalaxiasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Galaxia Enana -->
+
+            <ImageView
+                android:id="@+id/galaxia_enana"
+                android:layout_width="185dp"
+                android:layout_height="187dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/galaxia_enana"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/label_galaxia_enana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galaxia Enana"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/galaxia_enana"
+                app:layout_constraintStart_toStartOf="@+id/galaxia_enana"
+                app:layout_constraintEnd_toEndOf="@+id/galaxia_enana"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Galaxia Eliptica -->
+            <ImageView
+                android:id="@+id/galaxia_eliptica"
+                android:layout_width="177dp"
+                android:layout_height="181dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/galaxy_eliptica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/galaxia_enana" />
+
+            <TextView
+                android:id="@+id/label_galaxia_eliptica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galaxia Eliptica"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/galaxia_eliptica"
+                app:layout_constraintStart_toStartOf="@+id/galaxia_eliptica"
+                app:layout_constraintEnd_toEndOf="@+id/galaxia_eliptica"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Galaxia Irregular -->
+            <ImageView
+                android:id="@+id/galaxia_irregular"
+                android:layout_width="167dp"
+                android:layout_height="161dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/galaxia_irregular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/galaxia_eliptica" />
+
+            <TextView
+                android:id="@+id/label_galaxia_irregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galaxia Irregular"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/galaxia_irregular"
+                app:layout_constraintStart_toStartOf="@+id/galaxia_irregular"
+                app:layout_constraintEnd_toEndOf="@+id/galaxia_irregular"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Agujero Negro -->
+            <ImageView
+                android:id="@+id/agujero_negro"
+                android:layout_width="177dp"
+                android:layout_height="175dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/hoyo_negro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/galaxia_irregular" />
+
+            <TextView
+                android:id="@+id/label_agujero_negro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agujero Negro"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/agujero_negro"
+                app:layout_constraintStart_toStartOf="@+id/agujero_negro"
+                app:layout_constraintEnd_toEndOf="@+id/agujero_negro"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="104dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="24dp"
+                android:clickable="true"
+                android:onClick="goBack"
+                android:src="@drawable/regreso_inicio"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

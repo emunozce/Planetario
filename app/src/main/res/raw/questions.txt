@@ -1,0 +1,30 @@
+¿Cuál es el planeta más grande del sistema solar?|Júpiter|Marte|Venus
+¿Cuál es una característica destacada de Mercurio?|Tiene temperaturas extremadamente altas durante el día y muy bajas durante la noche debido a la falta de atmósfera significativa|Tiene una atmósfera densa|Tiene temperaturas moderadas en su superficie
+¿Cuál es la posición de Mercurio en relación al Sol en nuestro sistema solar?|Es el planeta más cercano al Sol|Es el tercer planeta más cercano al Sol|Es el planeta más alejado del Sol
+¿Cuál es la distancia aproximada de Venus al Sol?|108.2 millones de kilómetros|57.9 millones de kilómetros|200 millones de kilómetros
+¿Por qué Venus es conocido como el "gemelo de la Tierra"?|Debido a su tamaño y composición similar|Porque es un planeta frío y desértico|Por su falta de atmósfera
+¿Cuál es la distancia aproximada de la Tierra al Sol?|149.6 millones de kilómetros|57.9 millones de kilómetros|108.2 millones de kilómetros
+¿Qué distingue a la Tierra de los demás planetas en nuestro sistema solar?|Ser el único planeta conocido que alberga vida y tener una atmósfera que contiene oxígeno y agua en estado líquido en su superficie|Su atmósfera densa|La falta de vida en su superficie
+¿Cuál es la distancia aproximada de Marte al Sol?|227.9 millones de kilómetros|108.2 millones de kilómetros|149.6 millones de kilómetros
+¿Por qué a Marte a menudo se le llama el "Planeta Rojo"?|Debido a su color característico|Porque es el planeta más grande del sistema solar|Porque es el planeta más cercano al Sol
+¿Cuál es la distancia aproximada de Júpiter al Sol?|778.3 millones de kilómetros|108.2 millones de kilómetros|149.6 millones de kilómetros
+¿Qué característica distintiva tiene Júpiter en su atmósfera?|Una atmósfera dominada por gas hidrógeno y helio|Una capa de hielo permanente|Una atmósfera dominada por oxígeno y nitrógeno
+¿Cuál es la distancia aproximada de Saturno al Sol?|1.4 mil millones de kilómetros|778.3 millones de kilómetros|227.9 millones de kilómetros
+¿Qué hace a Saturno especialmente notable en el sistema solar?|Sus impresionantes anillos compuestos en su mayoría de partículas de hielo y roca|Sus temperaturas extremadamente altas|Sus intensas tormentas en su atmósfera
+¿Cuál es la distancia aproximada de Urano al Sol?|2.9 mil millones de kilómetros|1.4 mil millones de kilómetros|778.3 millones de kilómetros
+¿Qué característica única tiene Urano en términos de su inclinación axial?|Su inclinación axial extrema lo hace girar prácticamente de lado|Tiene una inclinación axial similar a la de la Tierra|No tiene inclinación axial, por lo que no tiene estaciones
+¿Cuál es la distancia aproximada de Neptuno al Sol?|4.5 mil millones de kilómetros|1.4 mil millones de kilómetros|2.9 mil millones de kilómetros
+¿Qué contribuye al intenso color azul de Neptuno?|La presencia de metano en su atmósfera|La presencia de oxígeno en su atmósfera|La abundancia de agua en su superficie
+¿Qué es el Sol?|Una estrella gigante de gas caliente|Una gran roca en el espacio|Un planeta cercano a la Tierra
+¿Por qué es importante el Sol?|Porque nos proporciona calor y luz, y hace que las plantas crezcan|Porque nos da luz durante la noche|Porque es un lugar donde los astronautas pueden vivir
+¿Cuál es la característica principal de un agujero negro?|Tienen una gravedad tan intensa que nada, ni siquiera la luz, puede escapar de su atracción|Reflejan la luz.|Tienen una gravedad muy débil.
+¿Cómo se forman los agujeros negros estelares?|Se forman a partir del colapso gravitacional de estrellas masivas al final de sus vidas|Se crean a partir de la acumulación de asteroides y cometas.|Se forman a partir del impacto de rayos cósmicos.
+¿Cuál es la característica distintiva de las galaxias espirales?|Tienen un núcleo brillante y brazos en espiral|Tienen una forma ovalada.|Son el resultado de colisiones entre otras galaxias.
+¿Qué tipo de galaxias contienen principalmente estrellas viejas?|Galaxias elípticas|Galaxias enanas.|Galaxias irregulares.
+¿Cuál es una característica principal de las galaxias elípticas?|Tienen una forma ovalada o esferoidal y contienen principalmente estrellas viejas|Tienen una forma espiral.|Son conocidas por tener muchas estrellas jóvenes.
+¿Qué tipo de estrellas predomina en las galaxias elípticas?|Principalmente estrellas viejas|Estrellas jóvenes y calientes.|Estrellas de tamaño mediano.
+¿Por qué las galaxias irregulares se llaman "irregulares"?|No tienen una forma definida y pueden ser el resultado de colisiones entre otras galaxias|Tienen una forma perfectamente esférica.|Tienen una forma de espiral.
+¿Cómo pueden formarse las galaxias irregulares?|Pueden ser el resultado de colisiones entre otras galaxias|Únicamente a través de la fusión de galaxias elípticas.|A través de colisiones de asteroides.
+¿Qué diferencia a las galaxias enanas de las galaxias grandes?|Son más pequeñas y contienen menos estrellas y materia que las galaxias grandes|Tienen una forma espiral.|Tienen una forma ovalada.
+¿Cuál es una característica común de las galaxias enanas?|Son menos masivas y tienen menos estrellas que las galaxias grandes|Contienen principalmente estrellas gigantes.|Tienen una gran población de estrellas jóvenes.
+
