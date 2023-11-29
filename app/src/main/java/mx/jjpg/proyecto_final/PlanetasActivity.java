@@ -26,36 +26,37 @@ public class PlanetasActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.sunImage).setOnClickListener(v -> {
-            openDetailActivity("Sun", R.drawable.sun);
+            openDetailActivity(R.string.sun_info, R.drawable.sun);
         });
         findViewById(R.id.mercuryImage).setOnClickListener(v -> {
-            openDetailActivity("Mercurio", R.drawable.mercury);
+            openDetailActivity(R.string.mercurio_info, R.drawable.mercury);
         });
         findViewById(R.id.venusImage).setOnClickListener(v -> {
-            openDetailActivity("Venus", R.drawable.venus);
+            openDetailActivity(R.string.venus_info, R.drawable.venus);
         });
         findViewById(R.id.tierraImage).setOnClickListener(v -> {
-            openDetailActivity("Tierra", R.drawable.earth);
+            openDetailActivity(R.string.tierra_info, R.drawable.earth);
         });
         findViewById(R.id.marteImage).setOnClickListener(v -> {
-            openDetailActivity("Marte", R.drawable.mars);
+            openDetailActivity(R.string.marte_info, R.drawable.mars);
         });
         findViewById(R.id.jupiterImage).setOnClickListener(v -> {
-            openDetailActivity("Jupiter", R.drawable.jupiter);
+            openDetailActivity(R.string.jupiter_info, R.drawable.jupiter);
         });
         findViewById(R.id.saturnoImage).setOnClickListener(v -> {
-            openDetailActivity("Saturno", R.drawable.saturn);
+            openDetailActivity(R.string.saturno_info, R.drawable.saturn);
         });
         findViewById(R.id.uranoImage).setOnClickListener(v -> {
-            openDetailActivity("Neptuno", R.drawable.uranus);
+            openDetailActivity(R.string.urano_info, R.drawable.uranus);
         });
         findViewById(R.id.neptunoImage).setOnClickListener(v -> {
-            openDetailActivity("Neptuno", R.drawable.neptune);
+            openDetailActivity(R.string.neptuno_info, R.drawable.neptune);
         });
     }
 
-    private void openDetailActivity(String planetName, int planetImageResId) {
+    private void openDetailActivity(int planetInfo, int planetImageResId) {
         Intent intent = new Intent(PlanetasActivity.this, DetailActivity.class);
+        String planetName = getString(planetInfo);
         intent.putExtra("planetName", planetName);
         intent.putExtra("planetImageResId", planetImageResId);
         startActivity(intent);
