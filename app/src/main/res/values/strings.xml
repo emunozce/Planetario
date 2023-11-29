@@ -1,16 +1,65 @@
 <resources>
     <string name="app_name">Proyecto_final</string>
     <string name="sun_info"></string>
-    <string name="mercurio_info"></string>
-    <string name="venus_info"></string>
-    <string name="tierra_info"></string>
-    <string name="marte_info"></string>
-    <string name="jupiter_info"></string>
-    <string name="saturno_info"></string>
-    <string name="urano_info"></string>
-    <string name="neptuno_info"></string>
-    <string name="enana_info"></string>
-    <string name="eliptica_info"></string>
-    <string name="irregular_info"></string>
-    <string name="agujero_info"></string>
+    <string name="mercurio_info">\u2022 Distancia al Sol: Aproximadamente 57.9 millones de kilómetros.\n\n
+\u2022 Características destacadas: Es el planeta más cercano al Sol y tiene
+temperaturas extremadamente altas en su superficie durante el día y muy
+bajas durante la noche debido a la falta de atmósfera significativa.</string>
+    <string name="venus_info">
+       \u2022 Distancia al Sol: Aproximadamente 108.2 millones de kilómetros.\n\n
+\u2022 Características destacadas: Es conocido como el "gemelo de la Tierra"
+debido a su tamaño y composición similar, pero su atmósfera densa y
+tóxica lo hace inhóspito para la vida. Es el planeta más caliente del
+sistema solar.
+    </string>
+    <string name="tierra_info">
+      \u2022 Distancia al Sol: Aproximadamente 149.6 millones de kilómetros.\n\n
+\u2022 Características destacadas: Es el único planeta conocido que alberga
+vida. Tiene una atmósfera que contiene oxígeno y agua en estado líquido
+en su superficie.
+    </string>
+    <string name="marte_info">
+    \u2022 Distancia al Sol: Aproximadamente 227.9 millones de kilómetros.\n\n
+\u2022 Características destacadas: A menudo se le llama el "Planeta Rojo"
+debido a su color característico. Ha sido objeto de investigaciones en
+busca de signos de vida pasada o presente.
+    </string>
+    <string name="jupiter_info">
+    \u2022 Distancia al Sol: Aproximadamente 778.3 millones de kilómetros.\n\n
+\u2022 Características destacadas: Es el planeta más grande del sistema solar y
+tiene una atmósfera dominada por gas hidrógeno y helio. También es
+famoso por su Gran Manchón Rojo, una gigantesca tormenta.
+    </string>
+    <string name="saturno_info">
+      \u2022 Distancia al Sol: Aproximadamente 1.4 mil millones de kilómetros.\n\n
+\u2022 Características destacadas: Saturno es conocido por sus impresionantes
+anillos compuestos en su mayoría de partículas de hielo y roca. Es el
+segundo planeta más grande del sistema solar.
+    </string>
+    <string name="urano_info">
+      \u2022 Distancia al Sol: Aproximadamente 2.9 mil millones de kilómetros.\n\n
+\u2022 Características destacadas: Urano es un planeta gaseoso con una
+inclinación axial extrema, lo que lo hace girar prácticamente de lado.
+Tiene un color azul verdoso debido a la presencia de metano en su
+atmósfera.
+    </string>
+    <string name="neptuno_info">
+      \u2022 Distancia al Sol: Aproximadamente 4.5 mil millones de kilómetros.\n\n
+\u2022 Características destacadas: Neptuno es un planeta gaseoso similar a
+Urano. Es el último planeta del sistema solar y tiene un intenso color azul
+debido a la presencia de metano.
+    </string>
+    <string name="enana_info">Son más pequeñas y contienen menos estrellas y
+materia que las galaxias grandes.</string>
+    <string name="eliptica_info">Tienen una forma ovalada o esferoidal y contienen
+principalmente estrellas viejas.</string>
+    <string name="irregular_info">No tienen una forma definida y pueden ser el
+resultado de colisiones entre otras galaxias.</string>
+    <string name="agujero_info">
+       \u2022 Un agujero negro es una región en el espacio donde la gravedad es tan intensa
+que nada, ni siquiera la luz, puede escapar de su atracción. Esto hace que
+aparezcan completamente negros y sean invisibles.\n\n\n
+       \u2022 Los agujeros negros se forman a partir del colapso gravitacional de estrellas
+masivas al final de sus vidas.
+    </string>
 </resources>
