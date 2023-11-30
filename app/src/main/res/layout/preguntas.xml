@@ -1,5 +1,4 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,20 +7,49 @@
     tools:context=".ThirdActivity">
 
     <TextView
+        android:id="@+id/vidas"
+        android:layout_width="79dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="236dp"
+        android:background="#78B3C0"
+        android:gravity="center"
+        android:text="5"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="236dp"
+        android:background="#78B3C0"
+        android:gravity="center"
+        android:text="Vidas:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/questionTextView"
-        android:layout_width="266dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="267dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="76dp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeTextType="uniform"
         android:background="@drawable/fondo_redondo"
+        android:gravity="center"
+        android:padding="16dp"
         android:text="Pregunta"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:gravity="center"
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="40sp"
-        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,16 +58,16 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_marginTop="24dp"
+        android:autoSizeMaxTextSize="24sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeTextType="uniform"
         android:background="@drawable/fondo_redondo"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Respuesta 1"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:gravity="center"
         android:textStyle="bold"
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="24sp"
-        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
@@ -49,16 +77,16 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_marginTop="24dp"
+        android:autoSizeMaxTextSize="24sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeTextType="uniform"
         android:background="@drawable/fondo_redondo"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Respuesta 2"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:gravity="center"
         android:textStyle="bold"
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="24sp"
-        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/answer1TextView" />
@@ -68,16 +96,16 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_marginTop="24dp"
+        android:autoSizeMaxTextSize="24sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeTextType="uniform"
         android:background="@drawable/fondo_redondo"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Respuesta 3"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:gravity="center"
         android:textStyle="bold"
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="24sp"
-        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/answer2TextView" />
@@ -88,10 +116,10 @@
         android:layout_height="180dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/check_mark"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answer3TextView"
-        android:visibility="invisible" />
+        app:layout_constraintTop_toBottomOf="@+id/answer3TextView" />
 
     <ImageView
         android:id="@+id/incorrectImageView"
@@ -99,9 +127,35 @@
         android:layout_height="180dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/cross_mark"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answer3TextView"
-        android:visibility="invisible" />
+        app:layout_constraintTop_toBottomOf="@+id/answer3TextView" />
+
+    <TextView
+        android:id="@+id/puntaje"
+        android:layout_width="79dp"
+        android:layout_height="46dp"
+        android:background="#78B3C0"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:background="#78B3C0"
+        android:gravity="center"
+        android:text="Puntaje:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

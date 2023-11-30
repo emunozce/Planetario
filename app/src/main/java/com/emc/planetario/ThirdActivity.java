@@ -8,25 +8,31 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class ThirdActivity extends AppCompatActivity {
-    private TextView questionTextView, answer1TextView, answer2TextView, answer3TextView;
+    private static final int MAX_INCORRECT_COUNT = 5; // Máximo número de respuestas incorrectas permitidas
+    private TextView questionTextView, answer1TextView, answer2TextView, answer3TextView, puntajeTxt, vidasTxt;
     private ImageView correctImageView, incorrectImageView;
     private List<Question> questionList;
     private int currentQuestionIndex;
     private int incorrectAnswerCount; // Nueva variable para contar respuestas incorrectas consecutivas
-    private static final int MAX_INCORRECT_COUNT = 3; // Máximo número de respuestas incorrectas permitidas
+    private int puntaje = 0, vidas = MAX_INCORRECT_COUNT;
+
+    private boolean firstTime = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,8 @@ public class ThirdActivity extends AppCompatActivity {
         answer3TextView = findViewById(R.id.answer3TextView);
         correctImageView = findViewById(R.id.correctImageView);
         incorrectImageView = findViewById(R.id.incorrectImageView);
+        puntajeTxt = findViewById(R.id.puntaje);
+        vidasTxt = findViewById(R.id.vidas);
         // Cargar preguntas y respuestas desde el archivo
         questionList = loadQuestionsFromRaw();
 
@@ -83,7 +91,7 @@ public class ThirdActivity extends AppCompatActivity {
         } else {
             // Has completado todas las preguntas o alcanzado el límite de respuestas incorrectas, puedes manejarlo aquí
             if (incorrectAnswerCount == MAX_INCORRECT_COUNT) {
-                showToast("Juego detenido. ¡Debes estudiar más!");
+
                 returnToScreen2(); // Agregar esta línea para regresar a la pantalla 2
             }
         }
@@ -98,11 +106,12 @@ public class ThirdActivity extends AppCompatActivity {
     private void checkAnswer(String selectedAnswer) {
         Question currentQuestion = questionList.get(currentQuestionIndex - 1);
         if (selectedAnswer.equals(currentQuestion.getCorrectAnswer())) {
-            showToast("Respuesta Correcta");
-            incorrectAnswerCount = 0; // Restablecer el conteo de respuestas incorrectas
+            puntaje += 100;
+            puntajeTxt.setText(Integer.toString(puntaje));
             correctImageView.setVisibility(View.VISIBLE); // Mostrar la imagen correcta
         } else {
-            showToast("Respuesta Incorrecta");
+            vidas -= 1;
+            vidasTxt.setText(Integer.toString(vidas));
             incorrectAnswerCount++;
             incorrectImageView.setVisibility(View.VISIBLE); // Mostrar la imagen incorrecta
         }
@@ -113,13 +122,6 @@ public class ThirdActivity extends AppCompatActivity {
                 showNextQuestion();
             }
         }, 1000); // Retraso de 1 segundo
-    }
-
-    private void showToast(String message) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, message, duration);
-        toast.show();
     }
 
     private List<Question> loadQuestionsFromRaw() {
@@ -148,5 +150,25 @@ public class ThirdActivity extends AppCompatActivity {
         }
         Collections.shuffle(questions);
         return questions;
+    }
+
+    private void savePuntaje(int puntaje) {
+        try (FileOutputStream fos = openFileOutput("puntaje.txt", Context.MODE_PRIVATE);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+            oos.writeInt(puntaje);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private int loadPuntajeFromFile() {
+        int loadedPuntaje = 0;
+        try (FileInputStream fis = openFileInput("puntaje.txt");
+             ObjectInputStream ois = new ObjectInputStream(fis)) {
+            loadedPuntaje = ois.readInt();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return loadedPuntaje;
     }
 }
