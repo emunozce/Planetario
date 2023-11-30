@@ -64,4 +64,10 @@ aparezcan completamente negros y sean invisibles.\n\n\n
        \u2022 Los agujeros negros se forman a partir del colapso gravitacional de estrellas
 masivas al final de sus vidas.
     </string>
+
+    <string name="congrats">
+        Felicidades!!!!\n\n
+        Acabas de alcanzar un nuevo record.\n\n
+        Sigue practicando para aumentar tu record personal.
+    </string>
 </resources>

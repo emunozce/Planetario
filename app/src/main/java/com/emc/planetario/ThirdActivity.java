@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -30,9 +31,7 @@ public class ThirdActivity extends AppCompatActivity {
     private List<Question> questionList;
     private int currentQuestionIndex;
     private int incorrectAnswerCount; // Nueva variable para contar respuestas incorrectas consecutivas
-    private int puntaje = 0, vidas = MAX_INCORRECT_COUNT;
-
-    private boolean firstTime = true;
+    private int puntaje = 0, highscore = 0, vidas = MAX_INCORRECT_COUNT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,10 +90,29 @@ public class ThirdActivity extends AppCompatActivity {
         } else {
             // Has completado todas las preguntas o alcanzado el límite de respuestas incorrectas, puedes manejarlo aquí
             if (incorrectAnswerCount == MAX_INCORRECT_COUNT) {
-
-                returnToScreen2(); // Agregar esta línea para regresar a la pantalla 2
+                if (isFirstTime()) {
+                    savePuntaje(puntaje);
+                    if(puntaje >= highscore) {
+                        savePuntaje(puntaje);
+                        goToHighScorePage();
+                    }
+                } else {
+                    highscore = loadPuntajeFromFile();
+                    if(puntaje > highscore) {
+                        savePuntaje(puntaje);
+                        goToHighScorePage();
+                    } else {
+                        returnToScreen2();
+                    }
+                }
             }
         }
+    }
+
+    private void goToHighScorePage() {
+        Intent intent = new Intent(this, HighScore.class);
+        startActivity(intent);
+        finish(); // Esto cierra la actividad actual
     }
 
     private void returnToScreen2() {
@@ -170,5 +188,11 @@ public class ThirdActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return loadedPuntaje;
+    }
+
+    //Checa si el file existe. Si existe, regresa falso.
+    private boolean isFirstTime() {
+        File file = new File(getFilesDir(), "puntaje.txt");
+        return !file.exists() || file.length() == 0;
     }
 }
