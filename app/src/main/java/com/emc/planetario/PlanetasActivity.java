@@ -8,21 +8,12 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PlanetasActivity extends AppCompatActivity {
-    private ImageView regreso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sistema);
 
-        regreso = findViewById(R.id.backButton);
-        regreso.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PlanetasActivity.this, EleccionActivity.class);
-                startActivity(intent);
-            }
-        });
 
         findViewById(R.id.sunImage).setOnClickListener(v -> {
             openDetailActivity(R.string.sun_info, R.drawable.sun);
@@ -59,5 +50,13 @@ public class PlanetasActivity extends AppCompatActivity {
         intent.putExtra("planetName", planetName);
         intent.putExtra("planetImageResId", planetImageResId);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, EleccionActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

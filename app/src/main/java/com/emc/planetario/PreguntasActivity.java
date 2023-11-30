@@ -92,15 +92,12 @@ public class PreguntasActivity extends AppCompatActivity {
             if (incorrectAnswerCount == MAX_INCORRECT_COUNT) {
                 if (isFirstTime()) {
                     savePuntaje(puntaje);
-                    if (puntaje >= highscore) {
-                        savePuntaje(puntaje);
-                        goToHighScorePage();
-                    }
+                    goToHighScorePage(puntaje);
                 } else {
                     highscore = loadPuntajeFromFile();
                     if (puntaje > highscore) {
                         savePuntaje(puntaje);
-                        goToHighScorePage();
+                        goToHighScorePage(puntaje);
                     } else {
                         returnToScreen2();
                     }
@@ -109,8 +106,9 @@ public class PreguntasActivity extends AppCompatActivity {
         }
     }
 
-    private void goToHighScorePage() {
+    private void goToHighScorePage(int puntaje) {
         Intent intent = new Intent(this, HighScoreActivity.class);
+        intent.putExtra("puntaje", puntaje);
         startActivity(intent);
         finish(); // Esto cierra la actividad actual
     }

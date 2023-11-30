@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Proyecto_final</string>
+    <string name="app_name">Galaxia Xplorer</string>
     <string name="sun_info">\u2022 El sol es la estrella central de nuestro Sistema Solar.\n\n
     \u2022 Características destacadas: Su temperatura llega a 16 millones de ºC.
     </string>
@@ -66,8 +66,8 @@ masivas al final de sus vidas.
     </string>
 
     <string name="congrats">
-        Felicidades!!!!\n\n
-        Acabas de alcanzar un nuevo record.\n\n
+        Felicidades!!!!\n
+        Superaste tu record, ahora el record es de:\n\n
         Sigue practicando para aumentar tu record personal.
     </string>
 </resources>

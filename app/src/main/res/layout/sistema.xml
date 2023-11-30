@@ -246,7 +246,7 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageView
+    <com.emc.planetario.BackButton
         android:id="@+id/backButton"
         android:layout_width="104dp"
         android:layout_height="100dp"

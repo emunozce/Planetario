@@ -8,21 +8,11 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GalaxiasActivity extends AppCompatActivity {
-    private ImageView regreso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.galaxias);
-
-        regreso = findViewById(R.id.backButton);
-        regreso.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(GalaxiasActivity.this, EleccionActivity.class);
-                startActivity(intent);
-            }
-        });
 
         findViewById(R.id.galaxia_eliptica).setOnClickListener(v -> {
             openDetailActivity(R.string.eliptica_info, R.drawable.galaxy_eliptica);
@@ -47,5 +37,13 @@ public class GalaxiasActivity extends AppCompatActivity {
         intent.putExtra("planetName", planetName);
         intent.putExtra("planetImageResId", planetImageResId);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, EleccionActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
