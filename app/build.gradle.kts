@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "mx.jjpg.proyecto_final"
+    namespace = "com.emc.planetario"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "mx.jjpg.proyecto_final"
+        applicationId = "com.emc.planetario"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

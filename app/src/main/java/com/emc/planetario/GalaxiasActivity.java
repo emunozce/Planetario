@@ -1,4 +1,4 @@
-package mx.jjpg.proyecto_final;
+package com.emc.planetario;
 
 import android.content.Intent;
 import android.os.Bundle;

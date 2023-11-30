@@ -1,4 +1,4 @@
-package mx.jjpg.proyecto_final;
+package com.emc.planetario;
 
 import java.util.ArrayList;
 import java.util.Collections;

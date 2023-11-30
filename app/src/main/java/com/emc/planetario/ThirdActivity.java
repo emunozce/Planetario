@@ -1,9 +1,10 @@
-package mx.jjpg.proyecto_final;
+package com.emc.planetario;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,7 +19,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import android.os.Handler;
 
 public class ThirdActivity extends AppCompatActivity {
     private TextView questionTextView, answer1TextView, answer2TextView, answer3TextView;
