@@ -2,7 +2,6 @@ package com.emc.planetario;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +9,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondActivity extends AppCompatActivity {
+public class EleccionActivity extends AppCompatActivity {
     private ImageView toggleMusic;
     private SharedPreferences sharedPreferences;
 
@@ -24,7 +23,7 @@ public class SecondActivity extends AppCompatActivity {
         planetario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SecondActivity.this, PlanetarioActivity.class);
+                Intent intent = new Intent(EleccionActivity.this, PlanetarioActivity.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +31,7 @@ public class SecondActivity extends AppCompatActivity {
         preguntas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                Intent intent = new Intent(EleccionActivity.this, PreguntasActivity.class);
                 startActivity(intent);
             }
         });

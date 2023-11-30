@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ThirdActivity extends AppCompatActivity {
+public class PreguntasActivity extends AppCompatActivity {
     private static final int MAX_INCORRECT_COUNT = 5; // Máximo número de respuestas incorrectas permitidas
     private TextView questionTextView, answer1TextView, answer2TextView, answer3TextView, puntajeTxt, vidasTxt;
     private ImageView correctImageView, incorrectImageView;
@@ -116,7 +116,7 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     private void returnToScreen2() {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, EleccionActivity.class);
         startActivity(intent);
         finish(); // Esto cierra la actividad actual
     }

@@ -23,8 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".EleccionActivity"></activity>
+        <activity android:name=".PreguntasActivity"></activity>
         <activity android:name=".PlanetarioActivity"></activity>
         <activity android:name=".PlanetasActivity"></activity>
         <activity android:name=".GalaxiasActivity"></activity>

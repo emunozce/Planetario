@@ -18,7 +18,7 @@ public class GalaxiasActivity extends AppCompatActivity {
         regreso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GalaxiasActivity.this, SecondActivity.class);
+                Intent intent = new Intent(GalaxiasActivity.this, EleccionActivity.class);
                 startActivity(intent);
             }
         });
