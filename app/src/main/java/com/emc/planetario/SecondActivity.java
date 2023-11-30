@@ -20,18 +20,6 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.segunda);
 
-        // Obtener el botón para controlar la música
-        toggleMusic = findViewById(R.id.btnToggleMusic);
-        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        boolean musicEnabled = sharedPreferences.getBoolean("musicEnabled", true);
-        toggleMusic.setImageResource(musicEnabled ? R.drawable.volume_up : R.drawable.volume_off);
-        toggleMusic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toggleMusic();
-            }
-        });
-
         Button planetario = findViewById(R.id.planetario);
         planetario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,22 +36,6 @@ public class SecondActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    private void toggleMusic() {
-        MediaPlayer mediaPlayer = MainActivity.getMediaPlayer();
-        if (mediaPlayer != null) {
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            if (mediaPlayer.isPlaying()) {
-                mediaPlayer.pause();
-                toggleMusic.setImageResource(R.drawable.volume_off);
-                editor.putBoolean("musicEnabled", false);
-            } else {
-                mediaPlayer.start();
-                toggleMusic.setImageResource(R.drawable.volume_up);
-                editor.putBoolean("musicEnabled", true);
-            }
-            editor.apply(); // Guardar los cambios en SharedPreferences
-        }
     }
 }
 
