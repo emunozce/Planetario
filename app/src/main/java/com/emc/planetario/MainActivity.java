@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
     }
+
     private void startMusic() {
         if (mediaPlayer == null) {
             mediaPlayer = MediaPlayer.create(this, R.raw.musica);
@@ -85,7 +86,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {}
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
 
     @Override
     public void onSensorChanged(SensorEvent event) {

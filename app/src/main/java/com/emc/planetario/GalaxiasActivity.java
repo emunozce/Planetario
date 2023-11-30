@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class GalaxiasActivity extends AppCompatActivity {
     private ImageView regreso;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/estrellas"
-    tools:context=".HighScore">
+    tools:context=".HighScoreActivity">
 
 
     <TextView
@@ -80,8 +80,8 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="0dp"
-        android:layout_height="107dp"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
         android:layout_marginTop="45dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="49dp"
@@ -89,6 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/partying_face" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
